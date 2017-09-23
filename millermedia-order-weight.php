@@ -7,7 +7,7 @@
  * Author URI: www.millermedia.io
  */
 
-add_action('init', function() {
+add_action('admin_init', function() {
 
 	add_action('woocommerce_admin_order_items_after_line_items', function($order_id) {
 		$order = wc_get_order($order_id);
